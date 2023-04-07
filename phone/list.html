@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+    <title>List Smartphone</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+<div></div>
+<form id="add-smartphone">
+    <table>
+        <tr>
+            <td>Producer:</td>
+            <td><input id="producer" placeholder="producer" type="text"></td>
+        </tr>
+        <tr>
+            <td>Model:</td>
+            <td><input id="model" placeholder="model" type="text"></td>
+        </tr>
+        <tr>
+            <td>Price:</td>
+            <td><input id="price" placeholder="price" type="text"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="add" onclick="addNewSmartPhone()"></td>
+        </tr>
+    </table>
+</form>
+<h1>Smartphone List</h1>
+<table>
+    <tr>
+        <td>ID</td>
+        <th>Producer</th>
+        <th>Model</th>
+        <th>Price</th>
+        <th>DELETE</th>
+    </tr>
+    <tbody id="display"></tbody>
+</table>
+<script src=ajax.js></script>
+</body>
+</html>
